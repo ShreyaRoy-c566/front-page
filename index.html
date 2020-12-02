@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body, html {
+  height: 100%;
+  font-family:Bell MT;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 22px 18px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #c8d1d475;
+  color: white;
+}
+.topnav-right {
+    float:right;
+  }
+
+.parallax {
+  /* The image used */
+  background-image: url('images/img8.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax1 {
+  /* The image used */
+  background-image: url('images/img9.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.instagram:hover
+{
+  background-color:#ea4c89
+}
+.social-icons a.Github:hover
+{
+  background-color:#b8a9ae
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600;
+    float:relative;
+  }
+}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #305a6b;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #2f5c5a65;
+}
+
+
+
+</style>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">Updates</a>
+        <a href="#contact">About us</a>
+        <a href="#about">Sign In</a>
+        <div class="topnav-right">
+            <img src="images/logo.png" height="80px" width="80px">
+        </div>
+      </div>
+      
+<div class="parallax"></div>
+
+<div style="height:1100px;background-color:rgba(247, 244, 244, 0.699);font-size:36px; ">
+<img src="images/vit_dark.png" height="30%" width="80%">
+<p>
+    <h2>What we do:</h2>
+<li>Events held By Us</li>
+<li>Apps Made By Us </li>
+<h3>Sign Up Now!!!</h3>
+
+<div>
+  <form action="">
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Registration Number</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your Registration No..">
+
+    <label for="country">Year</label>
+    <select id="Year" name="Year">
+      <option value="">1st Year</option>
+      <option value="">2nd Year</option>
+      <option value="">3rd Year</option>
+      <option value="">4th Year</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</p>
+</div>
+
+<div class="parallax"></div>
+
+<div class="parallax1">
+
+<div style="height:500px;background-color:rgb(240, 234, 234);font-size:36px; ">
+<center><h2>Meet Our teams</h2></center>
+<table style="width:100%">
+  <tr padding="20px">
+    <th><img src="images/img10.jpg" width="60%"><br>Marketting team</th>
+    <th><img src="images/img10.jpg" width="60%"><br>Development team</th> 
+    <th><img src="images/img10.jpg" width="60%"><br>H R team</th>
+  </tr>
+</table>
+</div>
+</div>
+
+  <div style="height:500px;background-color:rgb(240, 234, 234);font-size:36px; ">
+    <table style="width:100%">
+      <h3><center>Our Heads</center></h3> 
+      <tr padding="20px">
+        <th><img src="images/img10.jpg" width="60%"><br>President</th>
+        <th><img src="images/img10.jpg" width="60%"><br>Vice President</th> 
+        <th><img src="images/img10.jpg" width="60%"><br>Faculty Co-ordinator</th>
+      </tr>
+    </table>
+  </div>
+  <div class="parallax1">
+   <center><span style="font-size:500%;color:rgba(13, 8, 26);font-weight:bold"> You Can Join Us Today</span> </center>
+  </div>
+
+<footer class="site-footer">
+    <div class="container">
+        <center>
+                  <div class="row">
+          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+       <a href="#">Andoid Club</a>.
+          </p>
+        </center>
+        </div>
+
+       
+          <ul class="social-icons" alignment="center">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a class="Github" href="#"><i class="fa fa-github"></i></a></li>   
+          </ul>
+      </div>
+    </div>
+</footer>
+  
+</body>
+</html>
